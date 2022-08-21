@@ -1,0 +1,151 @@
+<!--Problem Statement:
+Design a web page StudentInfoForm.html to accept the following student details:
+1. Name (Accept only characters , Max 15 characters )
+2. Password (Max 15 characters)
+3. Phone number(Accept 10 digits)
+4. Gender (Make use of radio button)
+5. Date of Birth (Make use of date field and date of birth should not be greater than current date)
+6. Email (Accept valid Email)
+7. Highest Qualification (Make use of datalist to populate data like B.Tech, M.Tech, MBA, MCA, 
+MSc, MA, BSC..)
+8. Courses interested in (Make use of check box)
+9. Comments to mention regarding Degree / External Certificates (Make use of textarea)
+10. Uploading Degree / External certificates (Make use of file input type)
+11. Use Placeholders to describe the type of input.
+12. All fields marked (*) are mandatory
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Information</title>
+</head>
+<body style="background-color: skyblue;"> 
+
+    <form name="Formelements" action="index2.jsp">
+        <table border="1">
+            <tr>
+                <td><label for="demo">Name :*</label></td>
+                <td><input id ="demo" name="demo" type="text" minlength="3" maxlength="15" placeholder="Enter your name" /></td>
+            </tr>
+            
+            <tr>
+                <td><label for="nameauto">Password: *</label></td>
+                <td><input id ="nameauto" name="nameauto" type="password" placeholder="**********" maxlength="15" autofocus/></td>
+            </tr>
+
+            <tr>
+                <td><label for="nameauto">Phone Number:* </label></td>
+                <td><input id ="nameauto" name="nameauto" type="number" placeholder="enter 10 digit mobile no." autofocus/></td>
+            </tr>
+            <tr>
+                <td><label for="nameauto">Gender:* </label></td>
+                <td>
+                    <input id ="nameauto" name="nameauto" type="radio" autofocus/>Male
+                    <input id ="nameauto" name="nameauto" type="radio" autofocus/>Female 
+                </td>
+            </tr> 
+        
+            <tr>
+                <td><label for="date">Date of Birth :* </label></td>
+                <td><input id="date" name="date" type="date"  value="" ></td>
+            </tr>
+        
+            <tr>
+                <td><label for="email">Email:*</label></td>
+                <td><input id="email" name="email" type="email" required/></td>
+            </tr>
+
+            <tr>
+                <td><label>Highest Qualifications</label></td>
+                <td>
+                <select name="pref">
+                    <option value="btech">B.tech </option>
+                    <option value="hsc">HSC </option>
+                    <option value="sc">SC </option>
+                    <option value="exp">Experienced </option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="courses">Courses interested in: *</label></td>
+                <td><input id="courses" name="courses" type="checkbox" value=""/>Java
+                    <input id="courses" name="courses" type="checkbox" value=""/>HTML 5
+                    <input id="courses" name="courses" type="checkbox" value=""/>CSS 3
+                    <input id="courses" name="courses" type="checkbox" value=""/>Javascript
+                    <input id="courses" name="courses" type="checkbox" value=""/>Angular
+                    <input id="courses" name="courses" type="checkbox" value=""/>Jquery
+                </td>
+            </tr>
+        
+            <tr>
+                <td><label for="search">Comments:(Mention External Certifications if any) : </label></td>
+                <td>
+                <textarea name="addr" Rows="3" cols="40" tabindex="0" accesskey="A"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="file">Upload Degree/External Certificate:*</label></td>
+                <td><input id="file" name="file" type="file" required/></td>
+            </tr>
+
+<!--
+            <tr>
+                <td><label for="date">Month : </label></td>
+                <td><input id="date" name="date" type="month" value=""/></td>
+            </tr>
+        
+            <tr>
+                <td><label for="date">Time : </label></td>
+                <td><input id="date" name="date" type="time" value=""/></td>
+            </tr>
+        
+            <tr>
+                <td><label for="number">Number : </label></td>
+                <td><input id="number" name="number" type="number" step="1" min="-5" max="10" value="0" /></td>
+            </tr>
+        
+            <tr>
+                <td><label for="required">Required : </label></td>
+                <td><input id="required" name="user" type="text" required /></td>
+            </tr>
+                
+           
+        
+            <tr>
+                <td><label for="color">Color : </label></td>
+                <td><input id="color" name="color" type="color" placeholder="e.g. #bbbbbb" /><td>
+            </tr>
+        
+            <tr>
+                <td><label for="country_name">Country : </label></td>
+                <td><input id="country_name" name="country_name" type="text" list="country" /></td>
+                <td><datalist id="country">
+                    <option value="Afghanistan">
+                    <option value="Albania">
+                    <option value="Algeria">
+                    <option value="Andorra">
+                    <option value="Angola">
+                    <option value="Car">
+                    <option value="Cat">
+                    <option value="City">
+                    <option value="Cup">
+                    <option value="Clip">
+                    </datalist></td>
+            </tr>
+        -->
+            <tr>
+                <td></td>
+                <td align="left"><button type="submit" name="submit" 
+               value="Submit">Submit Information</button>
+                <button type="reset" name="reset" 
+               value="reset">Clear</button></td>
+            </tr>
+        </table>
+        
+            </form>
+</body>
+</html>
